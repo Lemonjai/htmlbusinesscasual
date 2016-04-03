@@ -1,0 +1,186 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+#sidebar{
+  display: none;
+}
+
+.clearfixbefore,
+.clearfix:after{
+  content: " ";
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+#main_navigation{
+  padding: 2.5em 5%;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+#main_navigation .name{
+  font-weight: 700;
+  font-size: .8em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border: 2px solid #E9E9E9;
+  padding: 1rem;
+  text-decoration: none;
+  color: #424652;
+  float: left;
+}
+
+#main_navigation nav{
+  float: right;
+  padding-top: 1.4rem;
+}
+
+#main_navigation nav a{
+  color:#424652;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+#main_footer{
+  width: 90%;
+  float: left;
+}
+
+#main_footer .copyright{
+  color: gray;
+}
+
+#main_footer{
+  padding: 2.5em 5%;
+  border-top: 1px solid #E9E9E9;
+}
+
+#main_footer .copyright{
+  float: left;
+  font-size: .9em;
+  margin: 0;
+}
+
+#main_footer nav i{
+  color: #424652;
+  margin-left: 1em;
+  padding-top: .2em;
+
+}
+
+.container{
+  width: 100%;
+}
+
+@media screen and (max-width: 800px){
+  #main_navigation{
+    display: none;
+  }
+
+  #main_footer{
+    display: none;
+  }
+
+  #content{
+    margin: 60px;
+    text-align: center;
+  }
+
+  #sidebar{
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    background: #151718;
+    width: 220px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: -221px;
+    top: 0px;
+    transition: left 0.3s linear;
+    border-right: 1px solid black;
+  }
+
+  #sidebar ul h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: .9em;
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 2px solid #E9E9E9;
+    padding: 1.5rem 1rem;
+    margin-bottom: 40px;
+  }
+
+  #sidebar ul p{
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  #sidebar.visible{
+    left:0px;
+    transition: left 0.3s linear;
+  }
+
+  .container.visible{
+    left:225px;
+    transition: left 0.3s linear;
+  }
+
+  ul{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  ul li{
+    list-style: none;
+    height: 60px;
+  }
+
+  ul li a{
+    display: block;
+    width: 200px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color:#424652;
+    font-size: 1.2rem;
+  }
+
+  #sidebar-btn{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+  }
+
+  #sidebar-btn span{
+    height: 1px;
+    background: #111;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  #sidebar-btn span:nth-child(2){
+    width: 75%;
+  }
+
+  #sidebar-btn span:nth-child(2){
+    width: 50%;
+  }
+}

@@ -1,0 +1,86 @@
+.container{
+  transition: left 0.3s linear;
+  margin: 10px auto;
+  right: 0;
+  left: 0;
+  max-width: 1380px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.container .column_feature{
+  padding: 10px;
+  position: relative;
+}
+
+.container .column_feature .post-content{
+  background: none repeat scroll 0  0 black;
+  opacity: 0.5;
+  left:5;
+  bottom: 0;
+  position: absolute;
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.container .column_feature .post-content h1,h6,p{
+  color: white;
+  margin-left: 20px;
+}
+
+.container .column_faeture .post-content h1{
+  font-size: 9rem;
+}
+
+.container .column_feature img{
+  width: 100%;
+}
+
+.container #welcome_articles .column_1{
+  width: 48%;
+  float: right;
+  padding-right: 10px;
+}
+
+.container #welcome_articles .column_2{
+  width: 48%;
+  float: left;
+  padding-left: 10px;
+}
+
+.container #welcome_articles .column_1 img{
+  width: 100%;
+}
+
+.container #welcome_articles .column_1 #post_article{
+  margin-bottom: 20px;
+  background: #FCFFFF;
+}
+
+.container #welcome_articles .column_2 #post_article{
+  margin-bottom: 20px;
+  background: #FCFFFF;
+}
+
+.container #welcome_articles .column_1 #post_article #post_article_content{
+  padding: 5px;
+}
+
+.container #welcome_articles .column_1 #post_article #post_article_content p{
+  color: gray;
+}
+
+.container #welcome_articles .column_2 #post_article #post_article_content p{
+  color: gray;
+}
+
+.container #welcome_articles .column_2 img{
+  width: 100%;
+}
+
+@media screen and (max-width: 800px){
+
+  .container{
+    position: relative;
+    margin-top: 60px;
+  }

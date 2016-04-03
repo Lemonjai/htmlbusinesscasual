@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Business Causal</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/welcome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!--Regular Nav Starts -->
+  <header id="main_navigation" class="clearfix">
+    <a href="index.html" class="name">BusinessCasual.io</a>
+    <nav id="menu">
+      <a href="article.html">Articles</a>
+      <a href="review.html">Reviews</a>
+      <a href="#">Contact</a>
+      <a href="#">About Us</a>
+    </nav>
+  </header>
+  <!--Regular Nav Ends-->
+
+  <!--Sidebar Nav Mobile Starts -->
+  <div id="sidebar">
+    <ul>
+      <h3>BusinessCasual</h3>
+      <li><a href="article.html">Article</a></li>
+      <li><a href="review.html">Review</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About Us</a></li>
+      <p>BusinessCasaul &copy; 2016</p>
+    </ul>
+
+    <div id="sidebar-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!--Sidebar Nav Mobile Ends -->
+
+  <!-- Start of contents -->
+  <div class="container">
+    
+    <div class="column_feature">
+      <img src="images/city1.jpg">
+
+        <div class="post-content">
+          <h6> Featured Article </h6>
+          <h1> Why Paris Is Known As The City Of Wine</h1>
+          <p> Written by Bob Dec. 16 ,2016</p>
+        </div>
+    </div>
+
+    <div id="welcome_articles">
+      <div class="column_1">
+      <h3>From Articles</h3>
+        
+        <div id="post_article">
+          <img src="images/city2.jpg">
+          <div id="post_article_content">
+            <h3>International Drinking aka Japan</h3>
+            <h5>Beer - By Francis Lee</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+          </div>
+        </div>
+
+        <div id="post_article">
+          <img src="images/city4.jpg">
+          <div id="post_article_content">
+            <h3>Going Out Tonight</h3>
+            <h5>Beer - By Francis Lee</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+          </div>
+        </div>
+
+        <div id="post_article">
+          <img src="images/city6.jpg">
+          <div id="post_article_content">
+            <h3>Enjoying Wine Of Success</h3>
+            <h5>Wine - By Adrian Yan</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column_2">
+      <h3>From Reviews</h3>
+
+        <div id="post_article">
+          <img src="images/city3.jpg">
+          <div id="post_article_content">
+            <h3>Brewery That Wasn't Meant To Be</h3>
+            <h5>Beer - By Francis</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+          </div>
+        </div>
+        
+        <div id="post_article">
+          <img src="images/city5.jpg">
+          <div id="post_article_content">
+            <h3>Best of Wine 2016</h3>
+            <h5>Wine - By Adrian Yan</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+          </div>
+        </div>
+        
+        <div id="post_article">
+          <img src="images/city7.jpg">
+          <div id="post_article_content">
+            <h3>Future of Wine Industry</h3>
+            <h5>Wine - By Adrian Yan</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Contents-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#sidebar-btn').click(function(){
+        $('#sidebar').toggleClass('visible'),
+        $('.container').toggleClass('visible');
+      });
+    });
+  </script>
+
+</body>
+</html>
